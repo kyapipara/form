@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>LINEBot</title>
+    <style>
+        /* タイトルのスタイル */
+        h1 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 送信ボタンのスタイル */
+        #button2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #button2:hover {
+            background-color: #0056b3;
+        }
+
+        /* 数値入力ボックスのサイズを変更 */
+        input[type="number"] {
+            width: 175px;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* セレクトボックスのスタイル */
+        select {
+            width: 180px;
+            height: 35px;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* テキストエリアのスタイル */
+        textarea {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>家計簿</h1>
+    <center>
+        <form action="#" method="post">
+            <p>料金<br>
+                <input type="number" size="10" name="name">
+            </p>
+            <p>購入物</p>
+            <select name="buy" id="pet-select">
+                <option value="" selected hidden></option>
+                <option value="traffic">交通費</option>
+                <option value="eat">飲食費</option>
+                <option value="hotel">宿泊費</option>
+                <option value="sightseeing">観光費</option>
+                <option value="souvenir">お土産</option>
+                <option value="else">雑費</option>
+            </select>
+            <p>メモ</p>
+            <textarea id="story" name="story" rows="4" cols="25"></textarea>
+            <p><input type="button" value="送信" id="button2"></p>
+        </form>
+    </center>
+
+</body>
+
+</html>
